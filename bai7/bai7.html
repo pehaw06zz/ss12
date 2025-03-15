@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikkei Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            color: white;
+            position: relative;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Rikkei cards</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2020/03/hinh-anh-mat-trang.jpg" class="card-img" alt="Moon">
+                    <div class="card-overlay">
+                        <h5>Short title, long jacket</h5>
+                        <div class="card-footer">
+                            <span>&#128205; Earth</span>
+                            <span>&#128197; 3d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://kynguyenlamdep.com/wp-content/uploads/2022/01/anh-cuc-hoa-mi-dep.jpg" class="card-img" alt="Flower">
+                    <div class="card-overlay">
+                        <h5>Much longer title that wraps to multiple lines</h5>
+                        <div class="card-footer">
+                            <span>&#128205; Pakistan</span>
+                            <span>&#128197; 4d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://th.bing.com/th/id/OIP.oJGfSed8rB99hqbYpKoL5wHaJ5?rs=1&pid=ImgDetMain" class="card-img" alt="Jellyfish">
+                    <div class="card-overlay">
+                        <h5>Another longer title belongs here</h5>
+                        <div class="card-footer">
+                            <span>&#128205; California</span>
+                            <span>&#128197; 5d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
